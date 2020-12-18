@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block link_app %}
+<link rel="stylesheet" href="{% static 'about/css/styles.css' %}">
+{% endblock link_app %}
+
+
+{% block jumbotron %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center text-white" style="margin-top: 30px;">
+        <h1 class="display-4">{{header}}</h1>
+    </div>
+</div>
+{% endblock jumbotron %}

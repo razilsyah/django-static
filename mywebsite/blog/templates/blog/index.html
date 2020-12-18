@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block link_app %}
+<link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+{% endblock link_app %}
+
+
+{% block jumbotron %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center text-white" style="margin-top: 30px;">
+        <h1 class="display-4">{{header}}</h1>
+    </div>
+</div>
+{% endblock jumbotron %}
+
+
+{% block konten %}
+<div class="container bg-dark shadow" style="margin-top: -30px;">
+    <div class="row text-white" style="height: 400px;">
+        <h1>BLOG CONTENT-1</h1>
+    </div>
+</div>
+<div class="container bg-white shadow">
+    <div class="row" style="height: 400px;">
+        <h1>BLOG CONTENT-2</h1>
+    </div>
+</div>
+<div class="container bg-dark shadow">
+    <div class="row text-white" style="height: 400px;">
+        <h1>BLOG CONTENT-3</h1>
+    </div>
+</div>
+{% endblock konten %}

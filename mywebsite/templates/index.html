@@ -1,0 +1,45 @@
+<!-- inheritance templates base.html-->
+
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center text-white" style="margin-top: 30px;">
+        <h1 class="display-4">{{header}}</h1>
+    </div>
+</div>
+{% endblock jumbotron %}
+
+
+{% block konten %}
+<div class="container bg-dark shadow" style="margin-top: -30px;">
+    <div class="row text-white" style="height: 400px;">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt laboriosam quam animi quod
+            necessitatibus ut modi labore officiis accusantium aperiam? Placeat, sit consequatur? Esse, quisquam
+            aliquid a dolores voluptates nobis.</h1>
+    </div>
+</div>
+<div class="container bg-white shadow">
+    <div class="row" style="height: 400px;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veritatis odio consequatur.
+            Veritatis fugiat architecto natus error assumenda quisquam, est soluta repellat voluptatem.
+            Distinctio earum, nulla perspiciatis consequatur
+            officiis quo?
+        </h1>
+    </div>
+</div>
+<div class="container bg-dark shadow">
+    <div class="row text-white" style="height: 400px;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum tempora quae deleniti officiis
+            laboriosam cum ex maiores ratione, nihil reiciendis eaque temporibus dolores doloribus cupiditate
+            quaerat quod excepturi quia?</h1>
+    </div>
+</div>
+<div class="container bg-white shadow">
+    <div class="row" style="height: 400px;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error sit aliquam perspiciatis,
+            deserunt cum et corrupti distinctio rerum placeat aliquid nihil facilis pariatur doloremque quas
+            corporis consequuntur iure ipsa.</h1>
+    </div>
+</div>
+{% endblock konten %}

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {% include 'snippets/styles.html' %}
+
+    {% block link_app %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock link_app %}
+</head>
+
+<body>
+    <!-- templates include -->
+    {% include 'snippets/navbar.html' %}
+
+    {% block jumbotron %}
+
+    {% endblock jumbotron %}
+
+
+    <div class="container-fluid ">
+
+        {% block konten %}
+
+        {% endblock konten %}
+
+    </div>
+
+    {% include 'snippets/script.html' %}
+</body>
+
+</html>
